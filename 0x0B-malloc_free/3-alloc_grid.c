@@ -1,6 +1,7 @@
-include <stdio.h>
+#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+
 
 /**
  * alloc_grid - returns a pointe rot a newly created 2D int grid
