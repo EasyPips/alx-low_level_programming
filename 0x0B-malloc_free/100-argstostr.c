@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mainn.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,7 +29,9 @@ char *argstostr(int ac, char **av)
 	 /* allocate memory for total number of chars and
 	 * new line for each word
 	 */
-	strDup = malloc(sizeof(char) * size)	if (strDup == NULL)
+	strDup = malloc(sizeof(char) * size);
+
+	if (strDup == NULL)
 		return (NULL);
 
 	k = 0;
@@ -41,7 +43,7 @@ char *argstostr(int ac, char **av)
 		}
 		strDup[k++] = '\n';
 	}
-	strDup[k] = '\';
+	strDup[k] = '\0';
 	return (strDup);
 }
 
